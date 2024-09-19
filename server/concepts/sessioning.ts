@@ -25,7 +25,7 @@ export default class SessioningConcept {
     // synchronization like starting a session should just consist of a series of actions that may throw
     // exceptions and should not have its own control flow.
     if (session.user) {
-      throw new Error("User is already logged in. Log out first.");
+      throw new Error("Log out first.");
     }
     session.user = username;
   }
